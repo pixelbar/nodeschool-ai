@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NodeSchool AI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <form id="uploadForm" action="/translate" method="post" encType="multipart/form-data">
+        <label for="text">Text to translate</label>
+        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+        <input type="submit" value="Translate" />
+      </form>
+
+      <% if (locals.result) { %>
+      <h2><%= locals.result %></h2>
+      <% } %>
+    </main>
+  </body>
+</html>
