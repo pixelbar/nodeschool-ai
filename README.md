@@ -19,9 +19,15 @@
    - Copy `.env.example` to `.env` and fill in the values
 8. Run the app: `node app.js`
 
+## Models
+
+Note that Transformers.js is limited in that it can only run models that have been converted to a special format (ONNX). You can find all models compatible with Transformers.js here: https://huggingface.co/models?library=transformers.js&sort=downloads.
+
 ## Resources
 
 - [Express documentation](https://expressjs.com) - Express is the framework that the application is built on
 - [Transformers.js documentation](https://huggingface.co/docs/transformers.js/index) - Transformers.js is a library to run machine learning models from Hugging Face on Node.js and the web
+- [Hugging Face Tasks](https://huggingface.co/tasks) - explore ML models for various specific tasks
 - [OpenAI API reference](https://platform.openai.com/docs/api-reference?lang=node.js)
 - [GPT best practices](https://platform.openai.com/docs/guides/gpt-best-practices) - best practices for prompting OpenAI GPT APIs
+- [OpenAI chat playground](https://platform.openai.com/playground?mode=chat) - playground to interact with Chat Completion API
