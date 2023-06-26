@@ -21,5 +21,7 @@
 
 ## Resources
 
-- [Transformers.js documentation](https://huggingface.co/docs/transformers.js/index)
+- [Express documentation](https://expressjs.com) - Express is the framework that the application is built on
+- [Transformers.js documentation](https://huggingface.co/docs/transformers.js/index) - Transformers.js is a library to run machine learning models from Hugging Face on Node.js and the web
 - [OpenAI API reference](https://platform.openai.com/docs/api-reference?lang=node.js)
+- [GPT best practices](https://platform.openai.com/docs/guides/gpt-best-practices) - best practices for prompting OpenAI GPT APIs
