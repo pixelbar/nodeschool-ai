@@ -24,8 +24,8 @@ quoteRouter.get("/quote", async (req, res) => {
           role: "user",
           content: `Make up an original motivational quote with less than 30 words. Then rewrite it as if Yoda said it.
   
-  Original: <original quote here>
-  Yoda: <Yoda quote here>`,
+Original: <original quote here>
+Yoda: <Yoda quote here>`,
         },
       ],
       temperature: 1.5,

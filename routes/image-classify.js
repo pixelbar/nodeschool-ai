@@ -24,9 +24,13 @@ imageClassifyRouter.post("/image-classify", async (req, res) => {
       return;
     }
 
+    // Grab the first label from the data it returns
     const firstLabel = results[0].label.split(",")[0];
+    // Grab the score and convert it to a percentage
+    const confidencePercentage = (results[0].score * 100).toFixed(1);
+
     res.render("image-classify", {
-      result: `I'm ${(results[0].score * 100).toFixed(1)}% sure this is a ${firstLabel}.`,
+      result: `I'm ${confidencePercentage}% sure this is a ${firstLabel}.`,
     });
   } catch (err) {
     console.error(err);
@@ -34,9 +38,10 @@ imageClassifyRouter.post("/image-classify", async (req, res) => {
   }
 });
 
+// Singleton pattern so that we only load the pipeline once
 export class ImageClassificationPipeline {
   static task = "image-classification";
-  // https://huggingface.co/google/vit-base-patch16-224
+  // Read more about the model: https://huggingface.co/google/vit-base-patch16-224
   static model = "Xenova/vit-base-patch16-224";
 
   static instance = null;

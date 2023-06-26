@@ -31,3 +31,7 @@ Note that Transformers.js is limited in that it can only run models that have be
 - [OpenAI API reference](https://platform.openai.com/docs/api-reference?lang=node.js)
 - [GPT best practices](https://platform.openai.com/docs/guides/gpt-best-practices) - best practices for prompting OpenAI GPT APIs
 - [OpenAI chat playground](https://platform.openai.com/playground?mode=chat) - playground to interact with Chat Completion API
+
+### Resources for after the workshop
+
+- [ChatGPT prompt engineering course](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/)
