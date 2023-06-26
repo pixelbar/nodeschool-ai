@@ -14,6 +14,10 @@
 6. Download models
    - If you're at Pixelbar, go to: http://172.16.31.216/ and download `t5-base.zip` and `vit-base-patch16-224.zip` and put them in the `models/Xenova` folder.
    - If you're not at Pixelbar, set `allowRemoteModels` in `app.js` to `true` to allow models to be downloaded at runtime.
+7. If you want to use OpenAI, create an account at https://openai.com. You get $5 of free credits to be used in the first 3 months.
+   - Create an API key: https://platform.openai.com/account/api-keys
+   - Copy `.env.example` to `.env` and fill in the values
+8. Run the app: `node app.js`
 
 ## Resources
 
